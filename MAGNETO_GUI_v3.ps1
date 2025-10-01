@@ -3,6 +3,11 @@
 # Author: Enhanced for Cybersecurity Practitioners
 # No external dependencies required - Pure PowerShell/Windows Forms
 
+# Set execution policy for current process only (doesn't trigger AV like Bypass)
+try {
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force -ErrorAction SilentlyContinue
+} catch {}
+
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 [System.Windows.Forms.Application]::EnableVisualStyles()
@@ -956,7 +961,7 @@ function Start-Update {
         if (Test-Path $launchScript) {
             Start-Process -FilePath $launchScript
         } else {
-            Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$(Join-Path $PSScriptRoot 'MAGNETO_GUI_v3.ps1')`""
+            Start-Process powershell -ArgumentList "-File `"$(Join-Path $PSScriptRoot 'MAGNETO_GUI_v3.ps1')`""
         }
 
         # Close current instance
