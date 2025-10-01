@@ -2,16 +2,56 @@
 
 **Version 3** - October 2025
 
-MAGNETO is a legitimate cybersecurity testing tool designed for security professionals to simulate Advanced Persistent Threat (APT) campaigns and MITRE ATT&CK techniques.
+## Overview
 
-## Features
+MAGNETO is a professional-grade **Living Off The Land (LOLBin)** attack simulation framework designed for security professionals, penetration testers, red teams, and SOC analysts. Built exclusively with native Windows binaries and PowerShell, MAGNETO provides a comprehensive suite of MITRE ATT&CK techniques without requiring any external dependencies, third-party tools, or additional installations.
 
-- ✅ **38 MITRE ATT&CK Techniques** - Comprehensive attack simulation
-- ✅ **7 APT Campaign Simulations** - Real-world threat actor profiles (APT41, Lazarus, APT29, etc.)
-- ✅ **MITRE ATT&CK Tactics Visualization** - Interactive HTML reports with kill chain mapping
-- ✅ **Enhanced Threat Intelligence** - Detailed APT attribution and detection methods
-- ✅ **Auto-Update System** - One-click updates from GitHub
-- ✅ **Windows Forms GUI** - No external dependencies required
+## Why MAGNETO is Unique
+
+### 🎯 100% Living Off The Land (LOLBin)
+
+MAGNETO exclusively leverages **legitimate Windows binaries** and built-in system tools that exist natively on every Windows installation:
+
+- **No external executables** - Uses only Microsoft-signed binaries (certutil.exe, rundll32.exe, regsvr32.exe, wmic.exe, etc.)
+- **No third-party dependencies** - No Python, no .NET assemblies, no PowerShell modules to install
+- **No compilation required** - Pure PowerShell scripts that run out-of-the-box
+- **Authentic threat simulation** - Mirrors real-world APT tradecraft that evades traditional signature-based detection
+
+### ⚡ Lightweight & Self-Contained
+
+- **Zero installation footprint** - Extract and run immediately
+- **< 2MB total size** - All scripts combined are smaller than most executables
+- **Portable** - Run from USB, network share, or any directory without system modifications
+- **No prerequisites** - Works on any Windows 10/11 system with PowerShell 5.0+
+
+### 📊 Comprehensive Coverage
+
+From basic reconnaissance to advanced persistence mechanisms:
+
+- **Simple techniques** - Network discovery, file enumeration, process listing
+- **Intermediate techniques** - Registry persistence, scheduled tasks, WMI queries
+- **Advanced techniques** - Process injection patterns, token manipulation, alternate data streams
+- **Complete attack chains** - Pre-configured APT campaign simulations with realistic TTPs
+
+### 🔬 Enterprise-Grade Testing Platform
+
+- **38 MITRE ATT&CK Techniques** - Covers 14 MITRE tactics from Initial Access to Impact
+- **7 APT Campaign Simulations** - Emulates real-world threat actors (APT41, Lazarus, APT29, FIN7, APT28, StealthFalcon)
+- **SIEM/EDR validation** - Test detection rules, correlation logic, and alert accuracy
+- **Purple team exercises** - Safe, controlled environment for offensive/defensive collaboration
+- **Compliance testing** - Validate security controls meet regulatory requirements
+
+## Key Features
+
+- ✅ **38 MITRE ATT&CK Techniques** - Full kill chain coverage across all tactics
+- ✅ **7 APT Campaign Simulations** - Real-world threat actor profiles with attributed TTPs
+- ✅ **MITRE ATT&CK Tactics Visualization** - Interactive HTML reports with detailed kill chain mapping
+- ✅ **Enhanced Threat Intelligence** - Each technique includes APT attribution, detection methods, and UEBA analytics
+- ✅ **Auto-Update System** - One-click updates directly from GitHub
+- ✅ **Windows Forms GUI** - Professional interface with no external dependencies
+- ✅ **Detailed Logging** - Timestamped execution logs with command-level detail
+- ✅ **HTML Reporting** - Professional reports with MITRE ATT&CK links and technique metadata
+- ✅ **Cleanup Functionality** - Remove artifacts and restore system state post-testing
 
 ## Quick Start
 
