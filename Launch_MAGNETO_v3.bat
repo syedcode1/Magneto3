@@ -112,7 +112,7 @@ echo.
 echo Starting GUI application...
 
 REM Launch the GUI
-powershell.exe -ExecutionPolicy Bypass -WindowStyle Normal -NoProfile -File "%~dp0%GUI_FILE%"
+powershell.exe -WindowStyle Normal -NoProfile -File "%~dp0%GUI_FILE%"
 
 set EXIT_CODE=%ERRORLEVEL%
 
