@@ -71,7 +71,7 @@ From basic reconnaissance to advanced persistence mechanisms:
 
 ## ⚠️ CRITICAL: Antivirus Exclusion Required
 
-**YOU MUST ADD ANTIVIRUS EXCLUSIONS BEFORE RUNNING MAGNETO**
+**YOU MAY NEED TO ADD ANTIVIRUS EXCLUSIONS BEFORE RUNNING MAGNETO**
 
 MAGNETO is a **legitimate cybersecurity testing tool** used by security professionals for authorized penetration testing and red team exercises. Antivirus software **will block MAGNETO** because it simulates real attack techniques.
 
@@ -85,83 +85,6 @@ If you see these errors, you need to add exclusions:
 ❌ "Technique section is empty"
 ❌ "Error loading techniques"
 ```
-
-### BitDefender - Step-by-Step Instructions
-
-**BEFORE launching MAGNETO, follow these steps:**
-
-1. Open **BitDefender** from system tray
-2. Click **Protection** in left sidebar
-3. Click **Antivirus**
-4. Click the **Settings** gear icon (⚙️)
-5. Scroll down and click **Manage Exceptions**
-6. Click **Add an Exception** button
-7. Choose **Folder** from the dropdown
-8. Click **Browse** and navigate to your MAGNETO folder
-   - Example: `C:\Users\YourName\Desktop\Latest MagnetoV3 working`
-9. Click **Select Folder**
-10. Click **Add Exception** to confirm
-11. **Restart your computer** (recommended) or restart MAGNETO
-
-**Alternative - Add Files Individually:**
-
-If folder exclusion doesn't work, add these files:
-- `MAGNETO_v3.ps1`
-- `MAGNETO_GUI_v3.ps1`
-- `Launch_MAGNETO_v3.bat`
-
-### Windows Defender - Step-by-Step Instructions
-
-**BEFORE launching MAGNETO, follow these steps:**
-
-1. Open **Windows Security** (search in Start menu)
-2. Click **Virus & threat protection**
-3. Scroll down to **Virus & threat protection settings**
-4. Click **Manage settings**
-5. Scroll down to **Exclusions**
-6. Click **Add or remove exclusions**
-7. Click **+ Add an exclusion**
-8. Select **Folder**
-9. Browse to your MAGNETO installation directory
-10. Click **Select Folder**
-11. Close Windows Security and launch MAGNETO
-
-### Kaspersky Users
-
-1. Open **Kaspersky** application
-2. Click **Settings** (⚙️ gear icon)
-3. Click **Additional** → **Threats and Exclusions**
-4. Click **Manage Exclusions**
-5. Click **Add**
-6. Browse to MAGNETO folder and click **Add**
-
-### Norton Users
-
-1. Open **Norton** application
-2. Click **Settings**
-3. Click **Antivirus**
-4. Click **Scans and Risks**
-5. Under **Exclusions/Low Risks**, click **Configure**
-6. Click **Add** under **Items to Exclude from Scans**
-7. Browse to MAGNETO folder
-
-### Avast/AVG Users
-
-1. Open **Avast/AVG** application
-2. Go to **Menu** → **Settings**
-3. Click **Exceptions** (or **General** → **Exceptions**)
-4. Click **Add Exception**
-5. Browse to MAGNETO folder
-6. Click **Add Exception**
-
-### McAfee Users
-
-1. Open **McAfee** application
-2. Click **PC Security** → **Real-Time Scanning**
-3. Click **Turn Off** → **Never**
-4. Or add MAGNETO folder to **Excluded Files** in settings
-
-### Other Antivirus Software
 
 Add the entire MAGNETO installation folder to your antivirus exclusion/whitelist list. Consult your antivirus documentation for "How to add exclusions" or "How to whitelist files."
 
