@@ -1,0 +1,15 @@
+{
+  "version": "3.3.1",
+  "releaseDate": "2025-10-02",
+  "changelog": "• Fixed button overlap issue in control panel\n• Removed Load Script button\n• Updated version display to MAGNETO v3 consistently\n• Fixed null-valued expression error on GUI launch\n• Improved button positioning and layout",
+  "downloadUrl": "https://github.com/syedcode1/Magneto3/archive/refs/heads/main.zip",
+  "critical": false,
+  "minVersion": "3.0.0",
+  "features": [
+    "38 MITRE ATT&CK Techniques",
+    "7 APT Campaign Simulations",
+    "MITRE ATT&CK Tactics Visualization",
+    "Enhanced Threat Intelligence",
+    "Real-World APT Attribution"
+  ]
+}
