@@ -69,7 +69,7 @@ From basic reconnaissance to advanced persistence mechanisms:
 - Administrator privileges (recommended)
 - .NET Framework 4.5+
 
-## ⚠️ CRITICAL: Antivirus Exclusion Required
+## ⚠️ CRITICAL: Antivirus Exclusion Warning
 
 **YOU MAY NEED TO ADD ANTIVIRUS EXCLUSIONS BEFORE RUNNING MAGNETO**
 
