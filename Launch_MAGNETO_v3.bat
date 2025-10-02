@@ -29,9 +29,8 @@ if %ERRORLEVEL% NEQ 0 (
     if %ERRORLEVEL% EQU 1 (
         echo.
         echo Restarting as Administrator...
-        REM FIXED: Actually restart as admin and exit current process
         powershell -Command "Start-Process '%~f0' -Verb RunAs"
-        exit /b
+        exit
     ) else (
         echo.
         echo Continuing without Administrator privileges...
