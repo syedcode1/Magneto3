@@ -9,8 +9,13 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 > **Living Off The Land Attack Simulator** - 100% REAL | 100% SAFE
-<img width="2359" height="1266" alt="Magneto" src="https://github.com/user-attachments/assets/f5093d30-897e-403f-b432-83eee903e680" />
+
+<img width="2904" height="1422" alt="Screenshot 2025-10-29 153457" src="https://github.com/user-attachments/assets/c9863539-c327-413b-8a83-cc9fc57d28f7" />
+
+
+
 <img width="2501" height="1309" alt="Screenshot 2025-10-23 144604" src="https://github.com/user-attachments/assets/128de513-2af3-4e73-ad98-7b49e58d7993" />
+
 
 A sophisticated PowerShell-based threat simulation framework designed for cybersecurity professionals to test UEBA/SIEM systems, validate security controls, and simulate real-world APT campaigns using native Windows binaries (LOLBins).
 
