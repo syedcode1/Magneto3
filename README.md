@@ -226,11 +226,20 @@ Simulate threats specific to 10 industry sectors:
 
 ### Quick Start
 
-1. **Clone the repository**:
+Option 1: Install via PowerShell
+  1. Open PowerShell
+  2. Navigate to directory where you like to install Magneto3 (e.g. D:\)
+  3. Paste following command and hit Enter. (This will download Magneto and place it in a folder called "Magneto3")
 ```bash
-git clone https://github.com/syedcode1/Magneto3.git
-cd Magneto3
+$repo = "Magneto3"; $url = "https://github.com/syedcode1/Magneto3/archive/HEAD.zip"; $zip = "Magneto3.zip"; Write-Host "⬇️  Downloading $repo..." -ForegroundColor Cyan; Invoke-WebRequest -Uri $url -OutFile $zip; Write-Host "📦 Extracting files..." -ForegroundColor Cyan; $temp = "temp_$((Get-Random))"; Expand-Archive -Path $zip -DestinationPath $temp -Force; $extracted = Get-ChildItem -Path $temp -Directory | Select-Object -First 1; if (Test-Path $repo) { Remove-Item $repo -Recurse -Force }; Move-Item -Path $extracted.FullName -Destination $repo; Remove-Item $zip; Remove-Item $temp -Recurse -Force; Write-Host "✅ Done! Application downloaded to ./$repo" -ForegroundColor Green; Start-Sleep -Seconds 3;
 ```
+
+Option 2: Install via Git (If you have Git installed)
+
+  ```bash
+  git clone https://github.com/syedcode1/Magneto3.git
+  cd Magneto3
+  ```
 
 2. **Verify files**:
 ```
